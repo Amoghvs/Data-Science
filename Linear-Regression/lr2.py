@@ -14,6 +14,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge
 #single dim dataset
 X, y = mglearn.datasets.make_wave(n_samples=60)
+import mglearn
 
 plt.scatter(X,y)
 plt.show()
@@ -95,8 +96,4 @@ plt.plot(lasso00001.coef_, 'o', label="Lasso alpha=0.0001")
 plt.plot(ridge01.coef_, 'o', label="Ridge alpha=0.1")
 plt.ylim(-25, 25)
 plt.legend()
-
-
-
-
 
